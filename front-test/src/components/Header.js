@@ -4,17 +4,17 @@ import ThemeSwitch from "./ThemeSwitch";
 import { HStack } from "@chakra-ui/react";
 
 const Header = () => {
-  const [seconds, setSeconds] = useState(0);
+  // const [seconds, setSeconds] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setSeconds(seconds + 1);
-    }, 1000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setSeconds((prev) => prev + 1);
+  //   }, 1000);
 
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
+  //   return () => {
+  //     clearInterval(interval);
+  //   };
+  // }, []);
 
   return (
     <HStack justifyContent="space-between" padding="20px" height="10vh">
